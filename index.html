@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Meridian Tennis</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-grid">
+            <div class="header-left">
+                <div class="theme-switch-wrapper" id="themeToggle">
+                    <div class="switch-track">
+                        <div class="switch-handle"></div>
+                    </div>
+                    <span id="themeText">СВЕТЛЫЙ РЕЖИМ</span>
+                </div>
+                <div class="lang-switch">
+                    <span class="lang-link active" data-lang="ru">RU</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-link" data-lang="uz">UZ</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-link" data-lang="en">EN</span>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="mainNav">
+                <a href="#about" class="nav-link" data-t="nav_about">О НАС</a>
+                <a href="#services" class="nav-link" data-t="nav_services">УСЛУГИ</a>
+                <a href="#gallery" class="nav-link" data-t="nav_gallery">ГАЛЕРЕЯ</a>
+                <a href="#contact" class="nav-link" data-t="nav_contacts">КОНТАКТЫ</a>
+            </nav>
+            <div class="header-right">
+                <img src="./logolight.png" alt="Logo" class="logo-img" id="logoImg">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="heroBg" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('./bgimglight.png');">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <span class="highlight">since 2021</span>
+                    <h1 class="premium-title">MERIDIAN</h1>
+                    <h2 class="premium-subtitle">TENNIS</h2>
+                    <p class="hero-subtext" data-t="hero_desc">Профессиональные теннисные корты с покрытием Hard и премиальным сервисом.</p>
+                    <a href="#contact" class="btn-orange" data-t="btn_book">ЗАБРОНИРОВАТЬ</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-t="nav_about">О НАС</h2>
+                <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                    <p data-t="about_p1">Meridian Tennis — современный теннисный комплекс, созданный для профессионалов и любителей. Мы работаем с 2021 года и предлагаем идеальные условия для тренировок и активного отдыха. Наши корты полностью соответствуют международным стандартам, обеспечивая комфортную игру в любое время года.</p>
+                    <p data-t="about_p2">Для удобства гостей у нас есть аренда теннисного инвентаря, видеонаблюдение для родителей, мини-бар, раздевалки и ежемесячные турниры.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-t="nav_services">УСЛУГИ</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon-box"><i class="fas fa-trophy"></i></div>
+                        <h3 data-t="service_1_title">Теннисные турниры</h3>
+                        <p data-t="service_1_desc">для разных возрастов и уровней подготовки — от начинающих до опытных игроков.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon-box"><i class="fas fa-baseball-ball"></i></div>
+                        <h3 data-t="service_2_title">Аренда инвентаря</h3>
+                        <p data-t="service_2_desc">ракетки, мячи и всё необходимое для комфортных тренировок и игр.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon-box-ac">
+                            <div class="ac-icon">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                        </div>
+                        <h3 data-t="service_3_title">Кондиционированные корты</h3>
+                        <p data-t="service_3_desc">поддерживается комфортная температура в любое время года.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-t="nav_gallery">ГАЛЕРЕЯ</h2>
+                <div class="gallery-wrapper">
+                    <div class="gallery-grid" id="galleryGrid">
+                        <div class="gal-img"><img src="./Screenshot_1.png" alt="Корт"></div>
+                        <div class="gal-img"><img src="./Screenshot_2.png" alt="Корт"></div>
+                        <div class="gal-img"><img src="./Screenshot_3.png" alt="Корт"></div>
+                        <div class="gal-img"><img src="./Screenshot_4.png" alt="Корт"></div>
+                        <div class="gal-img"><img src="./Screenshot_5.png" alt="Корт"></div>
+                        <div class="gal-img"><img src="./Screenshot_6.png" alt="Корт"></div>
+                    </div>
+                    <div class="gallery-nav-bottom">
+                        <button class="gallery-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-dots" id="galleryDots"></div>
+                        <button class="gallery-arrow next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-t="nav_contacts">КОНТАКТЫ</h2>
+                <div class="contact-flex">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="info-item">
+                            <div class="icon-wrapper"><i class="fas fa-map-marker-alt contact-icon"></i></div>
+                            <span data-t="form_addr_label">Адрес:</span>
+                            <p><a href="https://yandex.com/maps/org/meridian_tennis/194134027824/" target="_blank">Yunusobod, Avliyo Ota Koʻсhasi</a></p>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-wrapper"><i class="fas fa-phone-alt contact-icon"></i></div>
+                            <span data-t="form_phone_label">Телефон:</span>
+                            <p class="bold-text"><a href="tel:+998998019966">+998 99 801 99 66</a></p>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-wrapper"><i class="fab fa-instagram contact-icon"></i></div>
+                            <span>Instagram:</span>
+                            <p><a href="https://www.instagram.com/meridian.tennis/" target="_blank">@meridian.tennis</a></p>
+                        </div>
+                    </div>
+             <form id="contactForm" class="contact-form" data-aos="fade-left">
+    <div class="input-group">
+        <input type="text" name="name" placeholder="ИМЯ" required oninput="this.value = this.value.replace(/[0-9]/g, '')">
+    </div>
+    <div class="input-group">
+        <input type="text" name="phone" placeholder="НОМЕР ТЕЛЕФОНА" required oninput="this.value = this.value.replace(/[^0-9+]/g, '')">
+    </div>
+    <div class="input-group">
+        <input type="email" name="email" placeholder="EMAIL" required>
+    </div>
+    <div class="input-group">
+        <textarea name="message" placeholder="СООБЩЕНИЕ" rows="4" required></textarea>
+    </div>
+    <button type="submit" id="submitBtn" class="btn-orange" data-t="btn_send">ОТПРАВИТЬ</button>
+</form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
